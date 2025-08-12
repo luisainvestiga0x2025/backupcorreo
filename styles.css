@@ -1,0 +1,12 @@
+body {
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}
+
+.email-text {
+  font-size: smaller !important;
+  color: grey !important;
+}
+
+.email-body-text {
+  font-size: smaller !important;
+}
