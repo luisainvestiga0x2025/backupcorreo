@@ -112,56 +112,56 @@ angular.module('ionicApp', ['ionic'])
     inbox = [
     {
       id: 0,
-      subject: 'Hola!',
-      date: '2023-11-15 09:23',
-      from: 'daolihax',
-      body: 'Probando, probando, eeeeooo....',
-      was_read: false
-    },
-    {
-      id: 1,
-      subject: 'Test subj #2',
-      date: '2023-11-15 10:45',
-      from: 'John',
-      body: 'Test e-mail body #2',
-      was_read: false
-    },
-    {
-      id: 2,
-      subject: 'Test subj #3',
-      date: '2023-11-15 11:12',
-      from: 'John Doe',
-      body: 'Test e-mail body #3',
-      was_read: false
-    },
-    {
-      id: 3,
       subject: 'Entrevista confirmada - Caso Watergate',
-      date: '2023-11-16 14:30',
+      date: '2025-08-13 14:30',
       from: 'editor@periodismoinvestigativo.com',
       body: 'Hola, confirmamos tu entrevista con la fuente anónima del caso Watergate para el próximo martes a las 3pm. Por favor lleva tu grabadora y ningún dispositivo electrónico adicional.',
       was_read: false
     },
     {
+      id: 1,
+      subject: 'Backup de evidencia',
+      date: '2025-08-10 10:45',
+      from: 'Luisa',
+      body: 'RXN0dXZlIGFxde06ICAKQ29vcmRlbmFkYXM6IDQuOTE3MTc3NzAwMDM1MTgxNSwgLTc0LjA5ODA2ODk2MjU4NzAyIChDYWZldGVy7WEgQ3VjaGlwYW5kYSwgVGFiaW8sIEN1bmRpbmFtYXJjYSkuICAKUGFzczogQ3VjaGlwYW5kYS1taS1sdWdhci1zZWd1cm8=',
+      was_read: false
+    },
+    {
+      id: 2,
+      subject: 'RE: Solicitud de comentarios',
+      date: '2025-11-15 11:12',
+      from: 'rparker@ayuntamiento.gov',
+      body: 'Estimada estudiante, en relación a su solicitud de información sobre el caso de corrupción municipal, lamentamos informarle que no podemos hacer comentarios mientras la investigación esté en curso. Atentamente, Ricardo Parker - Departamento de Prensa.',
+      was_read: false
+    },
+    {
+      id: 3,
+      subject: 'Programación de entrevista',
+      date: '2025-08-02 14:30',
+      from: 'reportajes@eltiempo.com',
+      body: 'Hola, Luisa, queremos realizarte una entrevista sobre el caso del alcalde para el próximo 6 de Agosto. Queremos hablar sobre tus hallazgos y evidencias. Buen día.',
+      was_read: false
+    },
+    {
       id: 4,
       subject: 'Información confidencial - Escándalo universitario',
-      date: '2023-11-17 08:15',
+      date: '2025-06-17 08:15',
       from: 'whistleblowerX@protonmail.com',
       body: 'No respondas este correo. Los documentos que solicitaste sobre las irregularidades en los exámenes de admisión están adjuntos. Usa esta información con cuidado. - Fuente C.',
       was_read: false
     },
     {
       id: 5,
-      subject: 'RE: Solicitud de comentarios',
-      date: '2023-11-17 16:22',
-      from: 'rparker@ayuntamiento.gov',
-      body: 'Estimada estudiante, en relación a su solicitud de información sobre el caso de corrupción municipal, lamentamos informarle que no podemos hacer comentarios mientras la investigación esté en curso. Atentamente, Ricardo Parker - Departamento de Prensa.',
+      subject: 'Lugar seguro',
+      date: '2025-02-14 21:22',
+      from: 'Luisa',
+      body: 'Usa la primera letra de cada palabra de mi último tweet. Y no olvides, todo en Mayúsculas.',
       was_read: false
     },
     {
       id: 6,
       subject: 'URGENTE: Cambio de ubicación para la reunión',
-      date: '2023-11-18 19:05',
+      date: '2025-02-18 19:05',
       from: 'contactoseguro@tutanota.com',
       body: 'Por motivos de seguridad, hemos cambiado la ubicación de nuestro encuentro. Ahora será en el café Libertad a las 11am. Ve sola y no menciones este correo a nadie.',
       was_read: false
@@ -169,7 +169,7 @@ angular.module('ionicApp', ['ionic'])
     {
       id: 7,
       subject: 'Recordatorio: Deadline investigación contaminación',
-      date: '2023-11-19 09:00',
+      date: '2024-11-19 09:00',
       from: 'prof.gonzalez@facultad.edu',
       body: 'Recuerda que el reportaje sobre la contaminación industrial debe entregarse este viernes. Asegúrate de verificar todas tus fuentes y tener al menos tres testimonios confirmados. Saludos, Prof. González.',
       was_read: false
@@ -177,7 +177,7 @@ angular.module('ionicApp', ['ionic'])
     {
       id: 8,
       subject: 'Filtración: Documentos internos PharmaCorp',
-      date: '2023-11-20 02:18',
+      date: '2024-08-16 02:18',
       from: 'justicieroanonimo@mailfence.com',
       body: 'Adjunto encontrarás los documentos que prueban los experimentos no autorizados de PharmaCorp. Estos son extremadamente sensibles. Recomiendo usar seudónimo al publicar. El mundo necesita saber la verdad.',
       was_read: false
@@ -185,7 +185,7 @@ angular.module('ionicApp', ['ionic'])
     {
       id: 9,
       subject: 'Advertencia de seguridad',
-      date: '2023-11-20 12:47',
+      date: '2025-05-24 12:47',
       from: 'techsupport@securejournos.org',
       body: 'Hemos detectado intentos de hackeo a tu cuenta. Por favor activa la autenticación en dos pasos y cambia tu contraseña inmediatamente. Considera usar nuestro servicio de email encriptado para comunicaciones sensibles.',
       was_read: false
@@ -193,7 +193,7 @@ angular.module('ionicApp', ['ionic'])
     {
       id: 10,
       subject: 'Invitación: Conferencia sobre periodismo de investigación',
-      date: '2023-11-21 15:30',
+      date: '2024-05-21 15:30',
       from: 'eventos@fundacionprensalibre.org',
       body: 'Estimada colega, te invitamos a participar como panelista en nuestra próxima conferencia "Desafíos del periodismo investigativo en la era digital". Fecha: 5 de diciembre. Responder antes del 28/11.',
       was_read: false
@@ -201,7 +201,7 @@ angular.module('ionicApp', ['ionic'])
     {
       id: 11,
       subject: 'FUENTE CONFIABLE: Información sobre el alcalde',
-      date: '2023-11-22 07:12',
+      date: '2024-01-22 07:12',
       from: 'ciudadanopreocupado@temp-mail.net',
       body: 'Tengo pruebas de las cuentas offshore del alcalde. Puedo proporcionarte los documentos, pero necesito garantías de anonimato absoluto. Responde a este correo si estás interesada.',
       was_read: false
