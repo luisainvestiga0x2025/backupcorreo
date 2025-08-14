@@ -3,30 +3,30 @@ angular.module('ionicApp', ['ionic'])
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   $stateProvider
-    .state('appmenu', {
-      url: "/app",
-      abstract: true,
-      templateUrl: "app-menu.html",
-    	controller: "EmailMenuCtrl"
-    })
-    .state('appmenu.email-list', {
-      url: "/emails/:mode",
-      views: {
-        'menuContent': {
-          templateUrl: "email-list.html",
-          controller: "EmailListCtrl"
-        }
+  .state('app', {  // Cambiado de 'appmenu' a 'app'
+    url: "/app",
+    abstract: true,
+    templateUrl: "app-menu.html",
+    controller: "EmailMenuCtrl"
+  })
+  .state('app.email-list', {  // Asegúrate de que sea 'app.email-list'
+    url: "/emails/:mode",
+    views: {
+      'menuContent': {
+        templateUrl: "email-list.html",
+        controller: "EmailListCtrl"
       }
-    })
-    .state('appmenu.email-view', {
-      url: "/emails/:mode/:id",
-      views: {
-        'menuContent': {
-          templateUrl: "email-view.html",
-          controller: "EmailViewCtrl"
-        }
+    }
+  })
+  .state('app.email-view', {  // Asegúrate de que sea 'app.email-view'
+    url: "/emails/:mode/:id",
+    views: {
+      'menuContent': {
+        templateUrl: "email-view.html",
+        controller: "EmailViewCtrl"
       }
-    })
+    }
+  });
 
   $urlRouterProvider.otherwise("/app/emails/inbox");
 
@@ -36,10 +36,23 @@ angular.module('ionicApp', ['ionic'])
 
 .controller('EmailMenuCtrl', function($scope, EmailService) {
   $scope.data = {
-    inboxCount: EmailService.getInboxEmailCount(),
-    flaggedCount: 333,
-    sentCount: EmailService.getOutboxEmailCount()
+    inboxCount: 0,
+    flaggedCount: 0,
+    sentCount: 0
   };
+
+  // Espera a que el servicio cargue los datos
+  $scope.$watch(function() {
+    return EmailService.getInboxEmailCount();
+  }, function(count) {
+    $scope.data.inboxCount = count;
+  });
+
+  $scope.$watch(function() {
+    return EmailService.getOutboxEmailCount();
+  }, function(count) {
+    $scope.data.sentCount = count;
+  });
 })
 .controller('EmailListCtrl', function($stateParams, $scope, EmailService) {
 
