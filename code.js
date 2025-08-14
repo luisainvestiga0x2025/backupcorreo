@@ -220,28 +220,62 @@ angular.module('ionicApp', ['ionic'])
     if (outbox.length) {
       return;
     }
-    outbox = [{
+    outbox = [
+    {
       id: 0,
-      subject: 'Out - Test subj #1',
-      date: '0',
-      from: 'John Doe',
-      body: 'Test e-mail body #1',
+      subject: 'Salgo a investigar',
+      date: '2025-08-13 08:39',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'marcos-osint',
+      body: 'Marcos, hoy saldré a recolectar pruebas para una gran investigación que estoy haciendo, espero tener noticias pronto y darte grandes sorpresas. No olvides el lugar seguro, por si acaso.',
       was_read: true
-    }, {
+    },
+    {
       id: 1,
-      subject: 'Out - Test subj #2',
-      date: '0',
-      from: 'John',
-      body: 'Test e-mail body #2',
+      subject: 'Solicitud de entrevista - Caso corrupción municipal',
+      date: '2025-08-10 09:30',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'rparker@ayuntamiento.gov',
+      body: 'Estimado Sr. Parker, soy Luisa Méndez, estudiante de periodismo investigativo. Estoy trabajando en un reportaje sobre irregularidades en contratos del ayuntamiento en 2024. ¿Podría concederme una entrevista o proporcionar una declaración oficial? Agradezco su atención. Saludos, Luisa Méndez.',
       was_read: true
-    }, {
+    },
+    {
       id: 2,
-      subject: 'Out - Test subj #3',
-      date: '0',
-      from: 'dd John Doe',
-      body: 'Test e-mail body #3',
+      subject: 'Confirmación asistencia a entrevista - Caso Watergate',
+      date: '2025-08-12 11:45',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'editor@periodismoinvestigativo.com',
+      body: 'Confirmo mi asistencia a la entrevista del martes 13/08 a las 3pm. Llevaré únicamente mi grabadora profesional (modelo XJ-200 sin conexión wifi) y cuaderno de notas, como indicaron. ¿Hay algún protocolo de seguridad adicional que deba seguir? Atentamente, Luisa.',
       was_read: true
-    }];
+    },
+    {
+      id: 3,
+      subject: 'Re: Filtración PharmaCorp - Verificación de documentos',
+      date: '2025-05-25 14:20',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'justicieroanonimo@mailfence.com',
+      body: 'Recibí los archivos sobre los experimentos no autorizados. Para proceder, necesito validar su autenticidad: 1) ¿Tiene acceso a registros de pacientes afectados? 2) ¿Podría indicar cómo obtuvo los documentos adjuntos? Protegeré su identidad bajo el código "Fuente Gamma". Saludos, L.',
+      was_read: true
+    },
+    {
+      id: 4,
+      subject: 'Coordinación entrevista - Caso alcalde',
+      date: '2025-08-03 16:15',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'reportajes@eltiempo.com',
+      body: 'Acepto la entrevista para el 6/08. Adjunto lista de temas a cubrir: 1) Cuentas offshore (evidencia 2024), 2) Sobornos en licitaciones, 3) Mi metodología de investigación. CONDICIÓN: No revelar ubicación de fuentes. ¿Podrían enviarme el cuestionario con anticipación? Saludos, Luisa Méndez.',
+      was_read: true
+    },
+    {
+      id: 5,
+      subject: 'Respuesta a advertencia de seguridad',
+      date: '2025-05-24 13:30',
+      from: 'luisa.periodismo@universidad.edu',
+      to: 'techsupport@securejournos.org',
+      body: 'Gracias por la alerta. He: 1) Activado autenticación en dos pasos, 2) Cambiado mi contraseña a una de 18 caracteres, 3) Migrado comunicaciones sensibles a ProtonMail. ¿Recomiendan alguna VPN específica para investigar a PharmaCorp? Adjunto registro de intentos de phishing recibidos. Saludos, L.M.',
+      was_read: true
+    }
+];
   };
 
   return {
